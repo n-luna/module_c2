@@ -89,7 +89,7 @@ class Board:
                 cur = Dot(d.x + dx, d.y + dy)
                 if not (self.out(cur)) and cur not in self.busy:
                     if verb:
-                        self.field[cur.x][cur.y] = "."
+                        self.field[cur.x][cur.y] = "T"
                     self.busy.append(cur)
 
     def __str__(self):
